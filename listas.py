@@ -120,3 +120,47 @@ def remove_elem(elem, lista_a_remover):
 lista2 = remove_elem("ghi", alunos)
 print(lista2)
 print(alunos)
+
+def le_numeros():
+    """
+    Monta uma função que fica lendo
+    números do usuário, até que seja
+    pressionado ENTER, e adiciona os
+    números na lista numeros.
+    """
+    numeros = []
+    while True:
+        valor = input("Informe um número: ")
+        if valor == "":
+            return numeros
+
+        numeros.append(float(valor))
+
+notas = le_numeros()
+
+print(notas)
+
+# min/max/sum
+print(max(notas))
+print(min(notas))
+print(sum(notas))
+
+# sorted / sort
+notas_ordenadas = sorted(notas)
+print(notas_ordenadas)
+print(notas)
+
+notas.sort()
+print(notas)
+
+# reverse
+notas_decrescentes = sorted(
+    notas,
+    reverse=True
+)
+notas.sort(reverse=True)
+print(notas)
+print(notas_decrescentes)
+
+# count
+print(notas.count(5))
