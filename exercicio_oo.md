@@ -24,5 +24,3 @@
         - Inscrever um aluno em um curso;
         - Inscrever um aluno em disciplinas;
         - Exibir informações dos alunos.
-
-
